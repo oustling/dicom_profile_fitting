@@ -1,11 +1,15 @@
 # dicom_profile_fitting
-Tools for viewing and manipulating dicom images acquired by Elekta iViewGT system. Altogether it is a scripts chain that allows one to check if structure imaged by iViewGT has Gaussian or Voigt profile shape. 
+Tools for viewing and manipulating dicom images acquired by Elekta iViewGT system.
 
-There are following scripts:
+Altogether it is a scripts chain that allows one to check if structure imaged by iViewGT has Gaussian or Voigt profile shape. 
 
-• 3d_view - converts the contents of a dicom file to a .csv text file, then generates from that .csv file graphic .png file
+Separately each part can be used to achieve some dicom file manipulation.
 
-• bkg_subtracting - subtracts two dicom images from each other then adds some value, so the result is positive (size of both files must be 1024 times 1024 pixels),
+There are four following scripts:
+
+• 3d_view - python file converts the contents of a .dicom file to a .csv text file (ready to use with gnuplot pm3d), gnuplot file generates from .csv file graphic file (.png one),
+
+• bkg_subtracting - subtracts two dicom images from each other then adds some value, so the result is positive (size of both files must be 1024 times 1024 pixels), it can be used to eliminate background or some artifacts,
 
 • get_lines - saves the pixel lines extracted from the dicom file as a .csv text file,
 
