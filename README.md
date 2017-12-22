@@ -1,5 +1,5 @@
 # dicom_profile_fitting
-Tools for viewing and manipulating dicom images acquired by Elekta iViewGT system.
+Tools for viewing and manipulating dicom images acquired by Elekta iViewGT system. Altogether it is a scripts chain that allows one to check if structure imaged by iViewGT has Gaussian or Voigt profile shape. 
 
 There are following scripts:
 
